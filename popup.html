@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      width: 300px;
+      padding: 15px;
+      font-family: Arial, sans-serif;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    .status {
+      margin: 10px 0;
+      padding: 8px;
+      border-radius: 4px;
+      text-align: center;
+    }
+    .active {
+      background: #e6f4ea;
+      color: #137333;
+    }
+    .inactive {
+      background: #fce8e6;
+      color: #c5221f;
+    }
+    .translate-button {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: none;
+      background: #1a73e8;
+      color: white;
+      cursor: pointer;
+      display: block;
+      margin: 20px auto;
+      font-size: 24px;
+    }
+    .translations {
+      max-height: 300px;
+      overflow-y: auto;
+      margin-top: 15px;
+      border-top: 1px solid #eee;
+    }
+    .translation-item {
+      padding: 10px;
+      border-bottom: 1px solid #eee;
+    }
+    .time {
+      font-size: 12px;
+      color: #666;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h2>Japanese Meet Translator</h2>
+  </div>
+  <div id="status" class="status inactive">Translation Inactive</div>
+  
+  <button id="toggleTranslation" class="translate-button">⏺</button>
+  
+  <div id="translations" class="translations"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
