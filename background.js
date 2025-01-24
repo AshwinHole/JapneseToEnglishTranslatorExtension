@@ -3,8 +3,8 @@ let recognition = null;
 let audioContext = null;
 let mediaStream = null;
 
-const API_KEY = "0f1a776134e6921086c6";
-const API_EMAIL = "ashwinhole18@gmail.com";
+const API_KEY = "yourapikey";
+const API_EMAIL = "emailaddress";
 
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     if (request.action === "toggleTranslation") {
